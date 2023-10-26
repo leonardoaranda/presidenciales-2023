@@ -1,0 +1,27 @@
+# Elecciones presidenciales 2023
+
+Este script permite descargar los datos de cada una de las mesas de las elecciones presidenciales de Argentina.
+
+Obtiene la información desde https://resultados.gob.ar/
+
+## Instalar las dependencias
+
+```
+pip install -r requirements.txt
+```
+
+## Descargar los datos
+
+Para bajar una muestra de los resultados, por ejemplo, el 0.1%
+
+```
+python resultados.py 0.001
+```
+
+Para bajar el 100% de los datos
+
+```
+python resultados.py 1
+```
+
+Los resultados se exportan en `data/data.csv`.
